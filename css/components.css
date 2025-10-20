@@ -1,0 +1,91 @@
+.CTA3 {
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: Audiowide;
+  font-weight: bold;
+  font-size: 20pt;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 1.5rem 2.5rem;
+  background: #ccd4b2;
+  -webkit-mask: url("../images/svg/CTA3.svg") no-repeat center / contain;
+  mask: url("../images/svg/CTA3.svg") no-repeat center / contain;
+}
+.CTA3:hover {
+  background: #6668b8;
+}
+.CTA3.active {
+  background: #6668b8;
+}
+.CTA3.inactive {
+  background: #ccd4b2;
+}
+
+.slider-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin: 2em 0;
+  padding-top: 1em;
+}
+.slider-row label {
+  width: 130px;
+  text-align: right;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: -10px;
+  margin-left: 0.5em;
+}
+.slider-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2em;
+}
+.slider {
+  width: 100%;
+  appearance: none;
+  height: 12px;
+  border-radius: 10px;
+  background: #ddd;
+  outline: none;
+  position: relative;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #6668b8;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.bubble {
+  position: absolute;
+  top: -50px;
+  transform: translateX(-50%);
+  background: #6668b8;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: Audiowide;
+  font-size: 0.9em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.range-labels {
+  display: flex;
+  font-family: Verdana;
+  justify-content: space-between;
+  font-size: 10pt;
+  color: #444;
+  margin-top: 10px;
+}

@@ -1,0 +1,181 @@
+details {
+  text-align: left;
+  text-indent: 1em;
+  grid-area: 1 / 1;
+  padding: 0.5em;
+}
+summary {
+  cursor: pointer;
+}
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7 {
+  display: grid;
+}
+.opskrift {
+  position: relative;
+  background-image: linear-gradient(-45deg, #6668b8, #ccd4b2);
+  aspect-ratio: 1.222 / 1;
+  -webkit-mask-image: url("../images/svg/Form2.svg");
+  mask-image: url("../images/svg/Form2.svg");
+}
+.opskrift2 {
+  position: relative;
+  background-image: linear-gradient(-45deg, #6668b8, #ccd4b2);
+  aspect-ratio: 1.222 / 1;
+  -webkit-mask-image: url("../images/svg/Form1.svg");
+  mask-image: url("../images/svg/Form1.svg");
+}
+.tid {
+  display: grid;
+  grid-area: 1 / 1;
+  place-self: start;
+  justify-self: right;
+  z-index: 2;
+  padding-right: 8%;
+  padding-top: 10%;
+  font-size: clamp(0.8rem, 3vw, 3rem);
+  line-height: 0;
+}
+.hard {
+  display: grid;
+  grid-area: 1 / 1;
+  place-self: start;
+  justify-self: right;
+  z-index: 2;
+  padding-right: 8%;
+  padding-top: 20%;
+  font-size: clamp(1rem, 4.5vw, 3rem);
+  line-height: 1.3em;
+}
+.ret {
+  grid-area: 1 / 1;
+  place-self: start;
+  justify-self: start;
+  padding-top: 9%;
+  line-height: 0;
+  z-index: 1;
+  font-size: clamp(1rem, 5vw, 3rem);
+}
+.card1 .ret {
+  padding-left: 15%;
+}
+.card2 .ret {
+  padding-left: 10%;
+}
+.card3 .ret {
+  padding-left: 8%;
+}
+.card4 .ret {
+  padding-top: 4%;
+  padding-left: 2%;
+  font-size: clamp(1.5rem, 5.5vw, 3rem);
+  line-height: 1em;
+}
+.card5 .ret {
+  padding-top: 4%;
+  padding-left: 5%;
+  font-size: clamp(1.5rem, 5.5vw, 3rem);
+  line-height: 1em;
+}
+.card6 .ret {
+  padding-left: 5%;
+}
+.card7 .ret {
+  padding-top: 4%;
+  padding-left: 7%;
+  font-size: clamp(1.5rem, 5.5vw, 3rem);
+  line-height: 1em;
+}
+.content {
+  border: #767676 solid;
+  margin: 1em;
+  border-radius: 15px;
+  padding-top: 1em;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.content a {
+  text-decoration: none;
+  background-color: #6668b8;
+  color: white;
+  font-family: Audiowide;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.content p {
+  font-family: Verdana;
+  font-weight: bold;
+}
+.content h4 {
+  padding-top: 0.5em;
+}
+.img {
+  grid-area: 1 / 1;
+  max-width: 70%;
+  z-index: 1;
+  place-self: left;
+  justify-self: center;
+  padding-top: 23%;
+}
+.img2 {
+  grid-area: 1 / 1;
+  max-width: 60%;
+  z-index: 1;
+  place-self: left;
+  justify-self: center;
+  padding-top: 30%;
+}
+.knap {
+  display: grid;
+  grid-area: 1 / 1;
+}
+.like {
+  grid-area: 1 / 1;
+  justify-self: start;
+  align-self: flex-start;
+  margin-left: 8%;
+  margin-top: 62%;
+  z-index: 1;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.like svg {
+  width: 7vw;
+  height: auto;
+}
+.like:hover svg path {
+  stroke: white;
+}
+.like.fill svg path {
+  stroke: white;
+  fill: white;
+}
+@media (width>=800px) {
+  .tid {
+    font-size: clamp(0.8rem, 2vw, 3rem);
+  }
+  .hard {
+    font-size: clamp(1rem, 3vw, 3rem);
+  }
+  .ret {
+    font-size: clamp(1rem, 3.5vw, 4rem);
+  }
+  .card4 .ret,
+  .card5 .ret,
+  .card7 .ret {
+    font-size: clamp(1.5rem, 3.5vw, 4rem);
+  }
+  .like {
+    margin-left: 7%;
+    margin-top: 61%;
+  }
+  .like svg {
+    width: 5.5vw;
+  }
+}

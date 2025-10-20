@@ -1,0 +1,57 @@
+footer {
+  background-image: url(../images/svg/footer.svg);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: auto;
+}
+footer section {
+  display: flex;
+  padding-top: 5em;
+  align-items: center;
+}
+footer h4 {
+  padding-left: 0.5em;
+  padding-bottom: 2em;
+}
+.SoMe ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.SoMe ul li {
+  display: flex;
+  align-items: center;
+}
+footer .logo {
+  display: block;
+  width: 60px;
+  padding: 0.2em 0 0 1.5em;
+}
+
+nav ul li a img {
+  height: 30px;
+  width: 30px;
+  margin: -0.2em 0.3em 0 0;
+}
+.SoMe ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #6668b8;
+  width: 121.5px;
+  height: 51.5px;
+  -webkit-mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
+}
+nav ul li a:hover {
+  background: #ccd4b2;
+}
+nav ul li a:active {
+  background: #6668b8;
+}
+
+@media (width <= 800px) {
+  .SoMe ul {
+    flex-direction: column;
+  }
+}

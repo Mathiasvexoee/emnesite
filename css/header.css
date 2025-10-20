@@ -1,0 +1,116 @@
+header {
+  background-image: url(../images/svg/header.final.svg);
+  background-repeat: repeat-x;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 125px;
+  z-index: 10;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 60px;
+  padding: 0.2em 0 0 1.5em;
+}
+.menu {
+  flex-basis: 60%;
+  display: flex;
+  margin-top: -1em;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.header_nav ul li a img {
+  height: 30px;
+  width: 30px;
+  margin: -0.2em 0.3em 0 0;
+}
+.header_nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #6668b8;
+  width: 121.5px;
+  height: 51.5px;
+  -webkit-mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
+}
+.header_nav ul li a:hover {
+  background: #ccd4b2;
+}
+.header_nav ul li a:active {
+  background: #6668b8;
+}
+.burger {
+  cursor: pointer;
+  margin: 1em 1em 0 0;
+}
+.burger .line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 2.5px;
+  margin-top: 2.5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (width < 800px) {
+  .menu {
+    display: none;
+  }
+  .header_nav.active ul li {
+    justify-items: end;
+  }
+  .burger {
+    background-color: #6668b8;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+  .header_nav.active ul li a {
+    background: #ccd4b2;
+  }
+  .header_nav.active .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6668b8;
+    position: absolute;
+    top: 8.8em;
+    right: 1em;
+    width: 200px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    z-index: 1;
+  }
+  .header_nav.active .menu li {
+    margin: 10px 20px;
+  }
+}

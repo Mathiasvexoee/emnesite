@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.75em;
+}
+@font-face {
+  font-family: "Audiowide";
+  src: url(../fonts/Audiowide/Audiowide-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana";
+  src: url(../fonts/Verdana/Verdana.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana";
+  src: url(../fonts/Verdana/Verdana-Bold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana";
+  src: url(../fonts/Verdana/Verdana-Italic.woff);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Verdana";
+  src: url(../fonts/Verdana/Verdana-BoldItalic.woff);
+  font-weight: bold;
+  font-style: italic;
+}
+.forsidebillede {
+  display: grid;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.forsidebillede * {
+  grid-area: 1 / 1;
+  place-self: center;
+}
+h1 {
+  font-family: Audiowide;
+  font-size: 48pt;
+  color: #333333;
+}
+.forsidebillede h1 {
+  color: white;
+  line-height: 1.2;
+  font-size: clamp(2rem, 10vw, 50rem);
+  padding-left: 5%;
+}
+h2 {
+  font-family: Audiowide;
+  font-size: 24pt;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+}
+h3 {
+  font-family: Audiowide;
+  font-size: 20pt;
+  color: #333333;
+  margin-left: 0.5em;
+}
+h4 {
+  font-family: Verdana;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #333333;
+}
+details h4 {
+  color: #000000;
+}
+p {
+  font-family: Verdana;
+  font-size: 10pt;
+  font-weight: normal;
+  color: #000000;
+}
+li {
+  font-family: Verdana;
+  font-size: 10pt;
+  color: #000000;
+}
+ul li {
+  list-style: none;
+  line-height: 1.75em;
+}
+.baggrundsbillede {
+  border-radius: 25px;
+  max-width: 100%;
+  margin: 0 1em 0 1em;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.img_stor {
+  display: none;
+}
