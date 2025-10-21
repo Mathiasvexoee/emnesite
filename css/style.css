@@ -78,8 +78,8 @@ ol :nth-of-type(4)::before {
   cursor: pointer;
   width: 121.5px;
   height: 51.5px;
-  -webkit-mask-image: url("../images/svg/CTA2.svg") no-repeat center / contain;
-  mask-image: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  -webkit-mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
 }
 .search-btn img {
   height: 25px;
@@ -110,8 +110,8 @@ ol :nth-of-type(4)::before {
   cursor: pointer;
   width: 121.5px;
   height: 51.5px;
-  -webkit-mask-image: url("../images/svg/CTA2.svg") no-repeat center / contain;
-  mask-image: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  -webkit-mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
 }
 .madplan-btn img {
   height: 25px;

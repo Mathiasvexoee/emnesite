@@ -36,8 +36,8 @@ header {
   background: #6668b8;
   width: 121.5px;
   height: 51.5px;
-  -webkit-mask-image: url("../images/svg/CTA2.svg") no-repeat center / contain;
-  mask-image: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  -webkit-mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
 }
 .header_nav ul li a:hover {
   background: #ccd4b2;
