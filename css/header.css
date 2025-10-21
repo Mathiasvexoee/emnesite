@@ -1,7 +1,10 @@
 header {
   background-image: url(../images/svg/header.final.svg);
   background-repeat: repeat-x;
+  background-size: auto 125px;
   position: sticky;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
   top: 0;
   width: 100%;
   height: 125px;
@@ -36,8 +39,8 @@ header {
   background: #6668b8;
   width: 121.5px;
   height: 51.5px;
-  -webkit-mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
-  mask: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  -webkit-mask-image: url("../images/svg/CTA2.svg") no-repeat center / contain;
+  mask-image: url("../images/svg/CTA2.svg") no-repeat center / contain;
 }
 .header_nav ul li a:hover {
   background: #ccd4b2;

@@ -10,8 +10,8 @@
   min-width: 0;
   padding: 1.5rem 2.5rem;
   background: #ccd4b2;
-  -webkit-mask: url("../images/svg/CTA3.svg") no-repeat center / contain;
-  mask: url("../images/svg/CTA3.svg") no-repeat center / contain;
+  -webkit-mask-image: url("../images/svg/CTA3.svg") no-repeat center / contain;
+  mask-image: url("../images/svg/CTA3.svg") no-repeat center / contain;
 }
 .CTA3:hover {
   background: #6668b8;
